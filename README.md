@@ -15,7 +15,7 @@
 </div>
 
 <h4 align="center">
-  <a href="" target='_blank'>[Paper]</a>
+  <a href="https://arxiv.org/pdf/2306.00863.pdf" target='_blank'>[Paper]</a>
 </h4>
   
 <div>
