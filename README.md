@@ -2,6 +2,8 @@
 
 <h1>DeepFake-Adapter: Dual-Level Adapter for DeepFake Detection</h1>
 
+International Journal of Computer Vision (IJCV) 2024
+
 <div>
     <a href="https://rshaojimmy.github.io/" target="_blank">Rui Shao<sup>1,2</sup></a>
     <a href="https://tianxingwu.github.io/" target="_blank">Tianxing Wu<sup>2</sup></a>
