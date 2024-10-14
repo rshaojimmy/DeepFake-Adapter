@@ -33,7 +33,7 @@ We propose a novel DeepFake-Adapter, which is a dual-level adapter composed of G
 
 
 # Updates
-- [10/2024] Code and dataset are released.
+- [10/2024] Code has released.
 - [10/2024] Accepted by International Journal of Computer Vision (IJCV) 2024.
 
 # Installation
@@ -115,4 +115,4 @@ Here we list the performance comparison of SOTA multi-modal and single-modal met
 ```
 
 # Acknowledgements
-The codebase is maintained by [Rui Shao](https://rshaojimmy.github.io/) and [Tianxing Wu](https://tianxingwu.github.io/).
+The codebase is maintained by [Rui Shao](https://rshaojimmy.github.io/) and [Yuquan Xie](https://github.com/xieyuquanxx).
