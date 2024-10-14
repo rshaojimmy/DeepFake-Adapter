@@ -1,0 +1,7 @@
+{
+    "editor.codeActionsOnSave": {
+        "source.fixAll.ruff": "always",
+        "source.organizeImports.ruff": "explicit",
+    },
+    "ruff.nativeServer": "on",
+}

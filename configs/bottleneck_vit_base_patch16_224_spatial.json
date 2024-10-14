@@ -1,0 +1,40 @@
+{
+    "network": "vit_base_patch16_224_spatial",
+    "nb_classes": 2,
+    "drop": 0.0,
+    "drop_path": 0.0,
+    "attn_drop_rate": 0.0,
+    "vpt_num": 1,
+    "img_size": 224,
+    "normalize": {
+        "mean": [0.5, 0.5, 0.5],
+        "std": [0.5, 0.5, 0.5]
+    },
+    "optimizer": {
+        "batch_size": 32,
+        "type": "SGD",
+        "momentum": 0.9,
+        "weight_decay": 1e-4,
+        "blr": 0.1,
+        "min_lr": 0,
+        "warmup_epochs": 15,
+        "epochs": 100,
+        "scheduler": "cosine",
+        "criterion": "CrossEntropyLoss"
+    },
+    "finetuning": {
+        "method_name": "bottleneck",
+        "pretrained_weights": "pre_trained/jx_vit_base_patch16_224_in21k-e5005f0a.pth",
+        "ffn_num": 64,
+        "d_model": 768,
+        "h_size": 14,
+        "w_size": 8,
+        "ffn_adapter_scalar": "learnable_scalar",
+        "ffn_adapter_layernorm_option": "none",
+        "ffn_option": "parallel",
+        "use_learnable_pos_emb": true,
+        "drop": 0.0,
+        "num_heads_spatial_adapter": 6,
+        "interaction_indexes": [[0, 3], [4, 7], [8, 11]]
+    }
+}
