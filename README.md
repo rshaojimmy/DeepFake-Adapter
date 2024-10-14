@@ -21,7 +21,7 @@ International Journal of Computer Vision (IJCV) 2024
 </h4>
   
 <div>
-:fire: Code will be released. Stay tuned :beers: :+1: 
+:fire: Code has released. :+1: 
 </div>
 <br>
   
@@ -52,7 +52,6 @@ pip install -r requirements.txt
 ```
 
 # Dataset Preparation
-Download the whole dataset from [url](). After unzip all sub files, the structure of the dataset should be as follows:
 ```
 DeepFake
 ├── FaceForensicspp_RECCE

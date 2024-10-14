@@ -26,10 +26,6 @@ from torch.utils.data import Dataset
 from torchvision import transforms
 
 
-RAW_DATA_ROOT = "/mnt/lustre/share/rshao/data/deepfake"  # do not to modify this path
-YOUR_DATA_ROOT = "<replace your data path>"
-
-
 def read_data(file):
     info = pd.read_csv(file)
     try:
@@ -46,12 +42,6 @@ def make_dataset(csv_file):
     imgs, labels = read_data(csv_file)
 
     for i in range(len(imgs)):
-        if f"{RAW_DATA_ROOT}/" in imgs[i]:
-            imgs[i] = imgs[i].replace(
-                f"{RAW_DATA_ROOT}/",
-                f"{YOUR_DATA_ROOT}/",
-            )
-
         dataset.append((imgs[i], labels[i]))
 
     return dataset
