@@ -51,34 +51,6 @@ conda install -y -c pytorch pytorch=1.10.0 torchvision=0.11.1 cudatoolkit=11.3
 pip install -r requirements.txt
 ```
 
-# Dataset Preparation
-```
-DeepFake
-├── FaceForensicspp_RECCE
-│    ├── FaceForensicspp_RECCE_c23
-│    │    └── image_lists
-│    │        ├── test
-│    │        ├── train
-│    │        └── validation
-│    └── FaceForensicspp_RECCE_c40
-│         └── image_lists
-│             ├── test
-│             ├── train
-│             └── validation
-├── Celeb-DF
-│    ├── MTCNN_align
-│    │    └── ...
-│    ├── image_lists
-│    │    └── xxx.csv
-│    └── video
-│         └── ...
-└── ...
-```
-open `datasets/dataset.py`, copy the `DeepFake` path to the constant `YOUR_DATA_ROOT`.
-For example, `DeepFake` path is `/data/path/DeepFake`, then `YOUR_DATA_ROOT='/data/path/DeepFake'`.
-
-
-
 # Training
 download the vit pretrain weights from `https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-vitjx/jx_vit_base_patch16_224_in21k-e5005f0a.pth`.
 ```shell
